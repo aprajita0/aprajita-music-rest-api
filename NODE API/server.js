@@ -13,6 +13,7 @@ connect('mongodb+srv://admin:3169@aprajitaapi.7ia9tya.mongodb.net/Node-API?retry
     console.log(error)
 })
 
+
 app.use(cors(
     {
         origin: ["https://deploy-mern-aprajita-api.vercel.app"],
@@ -102,15 +103,3 @@ app.delete('/music/:id', async(req, res) => {
 })
 
 
-mongoose.
-connect('mongodb+srv://admin:3169@aprajitaapi.7ia9tya.mongodb.net/Node-API?retryWrites=true&w=majority&appName=AprajitaAPI')
-.then(() => {
-    console.log('Connected to MongoDB')
-    app.listen(5000, () =>{
-        console.log("Node API is running on port 5000"
-        )
-    })
-    
-}).catch((error) => {
-    console.log(error)
-})
