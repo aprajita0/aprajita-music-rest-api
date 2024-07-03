@@ -100,17 +100,3 @@ app.delete('/music/:id', async(req, res) => {
         res.status(500).json({message: error.message})
     }
 })
-
-
-mongoose.
-connect('mongodb+srv://admin:3169@aprajitaapi.7ia9tya.mongodb.net/Node-API?retryWrites=true&w=majority&appName=AprajitaAPI')
-.then(() => {
-    console.log('Connected to MongoDB')
-    app.listen(5000, () =>{
-        console.log("Node API is running on port 5000"
-        )
-    })
-    
-}).catch((error) => {
-    console.log(error)
-})
